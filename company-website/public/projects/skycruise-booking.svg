@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bfdbfe;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#skyBg)"/>
+  <!-- Booking Interface -->
+  <g transform="translate(50,50)">
+    <rect width="700" height="350" rx="10" fill="white"/>
+    <!-- Calendar -->
+    <g transform="translate(50,50)">
+      <rect width="200" height="200" rx="5" fill="#f1f5f9"/>
+      <g transform="translate(20,20)">
+        <rect width="160" height="30" fill="#0284c7"/>
+        <rect y="50" width="30" height="30" fill="#0ea5e9"/>
+        <rect x="43" y="50" width="30" height="30" fill="#0ea5e9"/>
+        <rect x="86" y="50" width="30" height="30" fill="#0ea5e9"/>
+      </g>
+    </g>
+    <!-- Flight Info -->
+    <g transform="translate(300,50)">
+      <rect width="300" height="60" rx="5" fill="#f1f5f9"/>
+      <rect y="80" width="300" height="60" rx="5" fill="#f1f5f9"/>
+      <rect y="160" width="300" height="60" rx="5" fill="#f1f5f9"/>
+    </g>
+  </g>
+</svg>
