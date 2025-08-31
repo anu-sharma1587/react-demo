@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export function ServicesPage() {
   return (
     <div className="container py-16">
@@ -19,7 +21,7 @@ export function ServicesPage() {
               <li>Guest Service Portal</li>
               <li>Analytics Dashboard</li>
             </ul>
-            <a href="/services/hotelpro" className="text-blue-600 font-medium hover:underline">Learn more →</a>
+            <Link to="/services/hotel-management" className="text-blue-600 font-medium hover:underline">Learn more →</Link>
           </div>
 
           <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
@@ -34,7 +36,7 @@ export function ServicesPage() {
               <li>Commission Management</li>
               <li>Booking Analytics</li>
             </ul>
-            <a href="/services/travelcore" className="text-blue-600 font-medium hover:underline">Learn more →</a>
+            <Link to="/services/tour-travel" className="text-blue-600 font-medium hover:underline">Learn more →</Link>
           </div>
         </div>
       </div>

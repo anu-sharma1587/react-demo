@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { getImagePath } from '@/lib/utils'
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -20,9 +21,9 @@ export function Navbar() {
           <div className="flex">
             <Link to="/" className="flex items-center">
               <img
-                className="h-8 w-auto"
-                src="/placeholder-logo.svg"
-                alt="Company Logo"
+                className="h-10 w-auto"
+                src={getImagePath('company-logo.svg')}
+                alt="TechSolutions Inc Logo"
               />
             </Link>
           </div>

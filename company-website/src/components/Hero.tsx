@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 export function Hero() {
   return (
@@ -16,12 +17,12 @@ export function Hero() {
           <p className="text-xl mb-8">
             Reliable IT Solutions & In-House Products for Modern Enterprises
           </p>
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="bg-white text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors inline-block"
           >
             Contact Us
-          </a>
+          </Link>
         </motion.div>
       </div>
       {/* Background pattern/overlay */}
