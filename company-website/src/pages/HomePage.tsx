@@ -37,7 +37,7 @@ export function HomePage() {
             </div>
             <div className="relative">
               <img
-                src="/about-preview.svg"
+                src="/react-demo/about-preview.svg"
                 alt="About Us"
                 className="rounded-lg shadow-lg"
               />
