@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vistaGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6d28d9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <g fill="url(#vistaGradient)">
+    <path d="M25 25h20v20H25z"/>
+    <circle cx="35" cy="35" r="5"/>
+    <rect x="45" y="30" width="10" height="10"/>
+  </g>
+  <text x="70" y="35" font-family="Arial" font-weight="bold" font-size="16" fill="#5b21b6">
+    VIRTUALVISTA
+  </text>
+  <text x="70" y="45" font-family="Arial" font-size="10" fill="#64748b">
+    SYSTEMS
+  </text>
+</svg>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="techBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0e7ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c7d2fe;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#techBg)"/>
+  <!-- Server Racks -->
+  <g transform="translate(50,50)">
+    <g transform="translate(0,0)">
+      <rect width="150" height="300" fill="#1e1b4b"/>
+      <g transform="translate(10,20)">
+        <rect width="130" height="20" fill="#818cf8" rx="2"/>
+        <rect y="30" width="130" height="20" fill="#818cf8" rx="2"/>
+        <rect y="60" width="130" height="20" fill="#818cf8" rx="2"/>
+        <rect y="90" width="130" height="20" fill="#818cf8" rx="2"/>
+      </g>
+    </g>
+    <g transform="translate(200,0)">
+      <rect width="150" height="300" fill="#1e1b4b"/>
+      <g transform="translate(10,20)">
+        <rect width="130" height="20" fill="#818cf8" rx="2"/>
+        <rect y="30" width="130" height="20" fill="#818cf8" rx="2"/>
+        <rect y="60" width="130" height="20" fill="#818cf8" rx="2"/>
+        <rect y="90" width="130" height="20" fill="#818cf8" rx="2"/>
+      </g>
+    </g>
+  </g>
+  <!-- Cloud Icons -->
+  <g transform="translate(450,50)">
+    <circle cx="50" cy="50" r="40" fill="white"/>
+    <circle cx="200" cy="50" r="40" fill="white"/>
+    <path d="M50,50 L200,50" stroke="white" stroke-width="5"/>
+    <path d="M125,50 L125,200" stroke="white" stroke-width="5"/>
+    <circle cx="125" cy="200" r="40" fill="white"/>
+  </g>
+</svg>
