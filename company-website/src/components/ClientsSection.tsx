@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { getImagePath } from '../lib/utils'
 
 const testimonials = [
   {
@@ -50,7 +51,7 @@ export function ClientsSection() {
                 viewport={{ once: true }}
               >
                 <img
-                  src={`/client-logo-${index + 1}.svg`}
+                  src={getImagePath(`client-logo-${index + 1}.svg`)}
                   alt={`Client Logo ${index + 1}`}
                   className="h-12 w-auto grayscale hover:grayscale-0 transition-all"
                 />
@@ -74,7 +75,7 @@ export function ClientsSection() {
               >
                 <div className="flex items-center mb-4">
                   <img
-                    src={`/placeholder-avatar-${testimonial.id}.svg`}
+                    src={getImagePath(`placeholder-avatar-${testimonial.id}.svg`)}
                     alt={testimonial.name}
                     className="h-12 w-12 rounded-full object-cover mr-4"
                   />
