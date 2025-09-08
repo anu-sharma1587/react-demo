@@ -373,13 +373,3 @@ Convert this synchronous method to async using Task, keep same behavior, and pro
 2. Keep prompts small and focused. Large tasks: break into steps.
 3. Save prompt templates you use often.
 4. Use structured outputs (JSON, diffs) when you want machine-consumable results.
-
----
-
-If you want, I can:
-
-* Generate a **README-ready version** with a table of contents and badges for your GitHub Pages.
-* Convert the guide into a single `README.md` file and push a suggested commit message.
-* Produce **printable cheat-sheets** or small flashcards.
-
-Which one would you like next?

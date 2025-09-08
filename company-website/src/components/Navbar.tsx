@@ -9,6 +9,7 @@ const navigation = [
   { name: 'Services', href: '/services' },
   { name: 'Clients', href: '/clients' },
   { name: 'Contact', href: '/contact' },
+  { name: 'GPT Guide', href: '/react-demo/gpt-guide.html', external: true },
 ]
 
 export function Navbar() {
@@ -31,13 +32,25 @@ export function Navbar() {
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-8">
             {navigation.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                className="text-gray-700 hover:text-primary transition-colors"
-              >
-                {item.name}
-              </Link>
+              item.external ? (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-gray-700 hover:text-primary transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {item.name}
+                </a>
+              ) : (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="text-gray-700 hover:text-primary transition-colors"
+                >
+                  {item.name}
+                </Link>
+              )
             ))}
           </div>
 
@@ -91,14 +104,27 @@ export function Navbar() {
       >
         <div className="px-2 pt-2 pb-3 space-y-1">
           {navigation.map((item) => (
-            <Link
-              key={item.name}
-              to={item.href}
-              className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              {item.name}
-            </Link>
+            item.external ? (
+              <a
+                key={item.name}
+                href={item.href}
+                className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsOpen(false)}
+              >
+                {item.name}
+              </a>
+            ) : (
+              <Link
+                key={item.name}
+                to={item.href}
+                className="block px-3 py-2 text-gray-700 hover:text-primary transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                {item.name}
+              </Link>
+            )
           ))}
         </div>
       </motion.div>
